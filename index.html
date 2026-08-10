@@ -246,7 +246,7 @@ tbody td{padding:13px 18px;border-bottom:1px solid #eef3f0;vertical-align:middle
 .login-title{font-size:20px;font-weight:800;margin-bottom:4px}
 .login-sub{font-size:13px;color:var(--muted);margin-bottom:22px}
 .pin-wrap{position:relative}
-.pin-input{width:100%;padding:14px 52px 14px 16px;font-size:18px;letter-spacing:4px;text-align:center;border:2px solid var(--line);border-radius:12px;outline:none;background:#fafcfb;font-weight:700}
+.pin-input{width:100%;padding:14px 52px 14px 16px;font-size:17px;text-align:center;border:2px solid var(--line);border-radius:12px;outline:none;background:#fafcfb;font-weight:700}
 .pin-input:focus{border-color:var(--orange)}
 .pin-toggle{position:absolute;right:10px;top:50%;transform:translateY(-50%);width:38px;height:38px;border-radius:9px;display:grid;place-items:center;font-size:18px;background:transparent;cursor:pointer;color:var(--muted)}
 .pin-toggle:hover{background:#fff4ec;color:var(--orange-d)}
@@ -541,7 +541,7 @@ tbody td{padding:13px 18px;border-bottom:1px solid #eef3f0;vertical-align:middle
         <a href="https://maps.google.com/?q=D26+Vibhuti+Khand+Gomti+Nagar+Lucknow+226010" target="_blank" rel="noopener">📍 3rd Floor, D26 Vibhuti Khand, Gomti Nagar, Lucknow – 226010 (Head Office)</a>
         <a href="tel:+918004080216">📞 +91 80040 80216</a>
         <a href="https://wa.me/918004080216" target="_blank" rel="noopener">💬 WhatsApp Us</a>
-        <a href="/cdn-cgi/l/email-protection#482f3a2929252d263e213a2726252d263c383a27222d2b3c3b082f25292124662b2725">✉️ <span class="__cf_email__" data-cfemail="6d0a1f0c0c0008031b041f0203000803191d1f0207080e191e2d0a000c0401430e0200">[email&#160;protected]</span></a>
+        <a href="/cdn-cgi/l/email-protection#caadb8ababa7afa4bca3b8a5a4a7afa4bebab8a5a0afa9beb98aada7aba3a6e4a9a5a7">✉️ <span class="__cf_email__" data-cfemail="3b5c495a5a565e554d52495455565e554f4b4954515e584f487b5c565a525715585456">[email&#160;protected]</span></a>
         <div style="margin-top:12px;font-size:12px;color:#7d9288;line-height:1.6"><b style="color:#c8d6ce">Service Areas:</b><br/>Shahjahanpur, Hardoi, Kanpur, Khiri (Lakhimpur), Sitapur, Barabanki, Ayodhya</div>
       </div>
     </div>
@@ -799,16 +799,15 @@ function openLoginModal(err){
   document.getElementById('modalBody').innerHTML=`
     <img class="login-logo" src="logo.png" alt="GRAAM" onerror="this.style.display='none'"/>
     <div class="login-title">Admin Login</div>
-    <div class="login-sub">Apna PIN daal kar dashboard kholein</div>
     <form onsubmit="doLogin(event)">
       <div class="pin-wrap">
-        <input id="loginPin" class="pin-input" type="password" inputmode="numeric" autocomplete="off" autofocus placeholder="••••••"/>
+        <input id="loginPin" class="pin-input" type="password" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" autofocus placeholder="Enter PIN"/>
         <button type="button" class="pin-toggle" onclick="togglePinVis()" title="Show/Hide" aria-label="Toggle PIN">👁️</button>
       </div>
       <div class="login-err" id="loginErr">${err||''}</div>
       <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:6px">🔓 Login</button>
     </form>
-    <div class="login-hint">PIN bhool gaye? Profile mein jaakar badal sakte hain (default: Graam@123)</div>`;
+    <div class="login-hint">🔒 Only for staff use</div>`;
   setTimeout(()=>{const el=document.getElementById('loginPin');if(el)el.focus();},100);
 }
 function togglePinVis(){
@@ -1363,6 +1362,6 @@ prog.style.cssText='position:fixed;top:0;left:0;height:3px;width:0;background:li
 document.body.appendChild(prog);
 window.addEventListener('scroll',()=>{const h=document.documentElement.scrollHeight-window.innerHeight;prog.style.width=(h>0?(window.scrollY/h*100):0)+'%';},{passive:true});
 </script>
-<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f"}' crossorigin="anonymous"></script>
-<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a28bc5eb7bb1563c',t:'MTc4NjMzMTA2Ng=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a28bdf504e9b91ec',t:'MTc4NjMzMjEwNg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f"}' crossorigin="anonymous"></script>
+</body>
 </html>
